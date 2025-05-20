@@ -1,0 +1,67 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | FitZone</title>
+  <link href="/css/bootstrap.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="d-flex">
+    <div class="bg-success text-white p-3" style="min-height: 100vh; width: 250px;">
+      <div class="text-center mb-2">
+        <img src="assets/img/FitZone.png" class="rounded" width="150" alt="Logo">
+      </div>
+
+      <hr>
+
+      <ul class="nav flex-column">
+        <li class="nav-item"><a href="FitZone.html" class="nav-link text-dark fw-bold">Dashboard</a></button></li>
+        <li class="nav-item"><a href="Usuarios.html" class="nav-link text-dark fw-bold">Usuarios</a></li>
+        <li class="nav-item"><a href="Actividades.html" class="nav-link text-dark fw-bold">Actividades</a></li>
+        <li class="nav-item"><a href="Contacto.html" class="nav-link text-dark fw-bold">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="flex-grow-1">
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark px-4">
+        <span class="navbar-text me-auto text-white">
+          Bienvenido, Fulanito de tal | <i class="fa-solid fa-clock"></i> <span id="datetime"></span>
+        </span>
+        <img src="assets/img/avatar.png" class="rounded-circle me-2" width="40" alt="User">
+        <h6 class="text-white">Fulanito de tal</h6>
+      </nav>
+
+  <div class="container mt-5">
+    <h2>Formulario de Contacto</h2>
+
+    <form id="formContacto">
+      <div class="mb-3">
+        <label for="nombreContacto" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombreContacto" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="emailContacto" class="form-label">Email</label>
+        <input type="email" class="form-control" id="emailContacto" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="asunto" class="form-label">Asunto</label>
+        <input type="text" class="form-control" id="asunto" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-warning">Enviar</button>
+    </form>
+
+  </div>
+
+  <script src="Contacto.js"></script>
+</body>
+</html>

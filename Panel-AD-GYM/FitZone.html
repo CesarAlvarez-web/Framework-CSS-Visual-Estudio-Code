@@ -1,0 +1,91 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitZone | Inicio</title>
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="d-flex">
+    <div class="bg-success text-white p-3" style="min-height: 100vh; width: 250px;">
+      <div class="text-center mb-2">
+        <img src="assets/img/FitZone.png" class="rounded" width="150" alt="Logo">
+      </div>
+
+      <hr>
+
+      <ul class="nav flex-column">
+        <li class="nav-item"><a href="FitZone.html" class="nav-link text-dark fw-bold">Dashboard</a></button></li>
+        <li class="nav-item"><a href="Usuarios.html" class="nav-link text-dark fw-bold">Usuarios</a></li>
+        <li class="nav-item"><a href="Actividades.html" class="nav-link text-dark fw-bold">Actividades</a></li>
+        <li class="nav-item"><a href="Contacto.html" class="nav-link text-dark fw-bold mb-5">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="flex-grow-1">
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark px-4">
+        <span class="navbar-text me-auto text-white">
+          Bienvenido, Fulanito de tal |  <i class="fa-solid fa-clock"></i> <span id="datetime"></span>
+        </span>
+        <img src="assets/img/avatar.png" class="rounded-circle me-2" width="40" alt="User">
+        <h6 class="text-white">Fulanito de tal</h6>
+      </nav>
+
+      <div class="container mt-4">
+        <h2>Panel de Administración de FitZone 💪</h2>
+          
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <div class="card text-white bg-primary mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Usuarios registrados</h5>
+            <p class="card-text fs-3">135</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-white bg-success mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Actividades disponibles</h5>
+            <p class="card-text fs-3">22</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-white bg-warning mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Mensajes recibidos</h5>
+            <p class="card-text fs-3">48</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <div class="mt-5 mb-4 bg-light">
+      <h4 class="text-center fw-bold">Grafico</h4>
+      <canvas class="shadow rounded" id="Estadisticas" height="100"></canvas>
+    </div>
+  </div>
+  
+  
+      </div>
+    </div>
+  </div>
+
+   <footer class="text-center text-white bg-dark">
+      &copy; FitZone derechos reservados.
+  </footer>
+
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="Inicio.js"></script>
+</body>
+</html>

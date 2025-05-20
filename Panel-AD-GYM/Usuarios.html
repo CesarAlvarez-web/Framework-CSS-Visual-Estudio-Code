@@ -1,0 +1,85 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usuarios | FitZone</title>
+  <link href="/css/bootstrap.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="d-flex">
+    <div class="bg-success text-white p-3" style="min-height: 100vh; width: 250px;">
+      <div class="text-center mb-2">
+        <img src="assets/img/FitZone.png" class="rounded" width="150" alt="Logo">
+      </div>
+
+      <hr>
+
+      <ul class="nav flex-column">
+        <li class="nav-item"><a href="FitZone.html" class="nav-link text-dark fw-bold">Dashboard</a></button></li>
+        <li class="nav-item"><a href="Usuarios.html" class="nav-link text-dark fw-bold">Usuarios</a></li>
+        <li class="nav-item"><a href="Actividades.html" class="nav-link text-dark fw-bold">Actividades</a></li>
+        <li class="nav-item"><a href="Contacto.html" class="nav-link text-dark fw-bold">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="flex-grow-1">
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark px-4">
+        <span class="navbar-text me-auto text-white">
+          Bienvenido, Fulanito de tal | <i class="fa-solid fa-clock"></i> <span id="datetime"></span>
+        </span>
+        <img src="assets/img/avatar.png" class="rounded-circle me-2" width="40" alt="User">
+        <h6 class="text-white">Fulanito de tal</h6>
+      </nav>
+
+  <div class="container mt-5">
+    <h2>Registro de Usuarios</h2>
+
+    <form id="formUsuario">
+      <div class="row">
+
+        <div class="col-md-6 mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" required>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label for="apellido" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="apellido" required>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label for="password" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="password" required>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label for="rol" class="form-label">Rol</label>
+
+          <select class="form-select" id="rol" required>
+            <option value="">Selecciona un rol</option>
+            <option value="admin">Administrador</option>
+            <option value="cliente">Cliente</option>
+          </select>
+
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label for="imagen" class="form-label">Imagen</label>
+          <input type="file" class="form-control">
+        </div>
+
+      </div>
+      <button type="submit" class="btn btn-primary">Registrar</button>
+    </form>
+  </div>
+
+  <script src="Usuarios.js"></script>
+</body>
+</html>
